@@ -83,7 +83,7 @@ Visualize the COVID cases by continents
 List Top 10 Countries with most COVID cases in the Europe
 <img src="images\COVID\COVID5-EuropeTop10.png?raw=true"/>
 
-7-day average is one of the indicator scientist used to track the COVID spread out.
+The 7-day moving average of daily reported cases is an important indicator to track the COVID spread out.
 List one country in each continent and track the cases with 7-day average.
 <img src="images\COVID\COVID6-SevenAvg.png?raw=true"/>
 
@@ -92,11 +92,20 @@ Track accumulated COVID cases number in Europe
 
 Track accumulated COVID cases number in the US
 <img src="images\COVID\COVID8-USCasesMap.png?raw=true"/>
+Among states, California has most COVID cases(9.35M), followed by Texas(6.79M), Florida(5.99M) and New York(5.26M).
+California, Texas, Florida and New York are states known for large population.
+Therefore, we can further examine the relationship between population and COVID cases.
 
 To investigate the correlation between population and the COVID cases in the US.
 We can use bubble chart to present population data vs cases per capita data
+
+State population data collected from U.S. Census Bureau, Release Date: December 2023
+https://www.census.gov/data/tables/time-series/demo/popest/2020s-state-total.html
+Here, due to lack a full year data in 2023, using 2022 data for calculation.
 <img src="images\COVID\COVID9-USBubbleChart.png?raw=true"/>
 
+In this bubble chart, we can observe that higher population does correlate with higher COVID cases; however, we can also noticed that some places with highest cases per capita is actually in the area with lower resident population.
+Among these three area, Rhode Island is expected since it's a popular spot for tourism. However, Alaska and North Dakota is not explainable by the visitors. Therefore, these two places will be a good target for further investigation in public health policy.
 
 ---
 <p style="font-size:11px">Page template forked from <a href="https://github.com/evanca/quick-portfolio">evanca</a></p>
