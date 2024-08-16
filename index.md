@@ -33,7 +33,7 @@ Perform ANOVA to examine the variance within and between groups
 [Project 1 - Heart Disease Prediction](https://github.com/Enlightenus/Heart_disease_prediction)
 <img src="images\Heart_Disease\Heart1-DataDistribution.png?raw=true"/>
 
-Selected Cholesterol and Age as the start point. Visualize the distribution.
+Selected known risk factors: Cholesterol and Age as the start point. Visualize the distribution.
 <img src="images\Heart_Disease\Heart2-Scatter.png?raw=true"/>
 <img src="images\Heart_Disease\Heart3-Swarm.png?raw=true"/>
 <img src="images\Heart_Disease\Heart4-Violin.png?raw=true"/>
