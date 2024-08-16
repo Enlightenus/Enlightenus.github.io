@@ -2,7 +2,7 @@
 
 ---
 
-### Ongoing Projects
+## Ongoing Projects
 
 [Project 1 - Human Resource Data Analysis](https://github.com/Enlightenus/Human_Resources_Data_Analysis)
 
@@ -29,11 +29,14 @@ Perform ANOVA to examine the variance within and between groups
 
 ---
 
-### Projects
+## Projects
 [Project 1 - Heart Disease Prediction](https://github.com/Enlightenus/Heart_disease_prediction)
+
+Visualize the distribution.
 <img src="images\Heart_Disease\Heart1-DataDistribution.png?raw=true"/>
 
-Selected known risk factors: Cholesterol and Age as the start point. Visualize the distribution.
+Start with known risk factors: Cholesterol and Age.
+
 <img src="images\Heart_Disease\Heart2-Scatter.png?raw=true"/>
 <img src="images\Heart_Disease\Heart3-Swarm.png?raw=true"/>
 <img src="images\Heart_Disease\Heart4-Violin.png?raw=true"/>
