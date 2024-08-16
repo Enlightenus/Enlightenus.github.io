@@ -15,6 +15,7 @@
 <img src="images\HR\HR8-Performance.png?raw=true"/>
 <img src="images\HR\HR9-PerformancePercent.png?raw=true"/>
 
+
 ---
 
 ---
@@ -31,6 +32,8 @@
 <img src="images\Heart_Disease\Heart8-ClassificationReport.png?raw=true"/>
 <img src="images\Heart_Disease\Heart9-ConfusionMatrix.png?raw=true"/>
 ---
+
+
 [Project 2 - COVID Visualization](https://github.com/Enlightenus/COVID_Visualization)
 
 
