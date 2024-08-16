@@ -46,15 +46,41 @@ Among all symptoms, the **Chest Pain Type** and **ST depression** are more impor
 <img src="images\Heart_Disease\Heart7-Feature.png?raw=true"/>
 <img src="images\Heart_Disease\Heart8-ClassificationReport.png?raw=true"/>
 <img src="images\Heart_Disease\Heart9-ConfusionMatrix.png?raw=true"/>
+
 ---
 
+---
 
 [Project 2 - COVID Visualization](https://github.com/Enlightenus/COVID_Visualization)
 
+How severe is COVID in the US?
 
----
+Visualize the COVID cases and deaths in the US
+<img src="images\COVID\COVID1-UScases.png?raw=true"/>
+<img src="images\COVID\COVID2-USdeaths.png?raw=true"/>
 
+How severe is COVID by continents?
 
+Visualize the COVID cases by continents
+<img src="images\COVID\COVID3-Cases.png?raw=true"/>
+<img src="images\COVID\COVID4-CasesStacked.png?raw=true"/>
+
+List Top 10 Countries with most COVID cases in the Europe
+<img src="images\COVID\COVID5-EuropeTop10.png?raw=true"/>
+
+7-day average is one of the indicator scientist used to track the COVID spread out.
+List one country in each continent and track the cases with 7-day average.
+<img src="images\COVID\COVID1-COVID6-SevenAvg.png?raw=true"/>
+
+Track accumulated COVID cases number in Europe
+<img src="images\COVID\COVID7-EuropeCasesChoropleth.gif?raw=true"/>
+
+Track accumulated COVID cases number in the US
+<img src="images\COVID\COVID8-USCasesMap.png?raw=true"/>
+
+To investigate the correlation between population and the COVID cases in the US.
+We can use bubble chart to present population data vs cases per capita data
+<img src="images\COVID\COVID9-USBubbleChart.png?raw=true"/>
 
 
 ---
