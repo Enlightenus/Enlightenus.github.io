@@ -13,7 +13,7 @@
 <img src="images\HR\HR6-DeptRecruitment.png?raw=true"/>
 <img src="images\HR\HR7-RecruitmentAction.png?raw=true"/>
 <img src="images\HR\HR8-Performance.png?raw=true"/>
-<img src="images\HR\HR9-PerformancePercent?raw=true"/>
+<img src="images\HR\HR9-PerformancePercent.png?raw=true"/>
 
 ---
 
