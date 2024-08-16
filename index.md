@@ -85,7 +85,7 @@ List Top 10 Countries with most COVID cases in the Europe
 
 7-day average is one of the indicator scientist used to track the COVID spread out.
 List one country in each continent and track the cases with 7-day average.
-<img src="images\COVID\COVID1-COVID6-SevenAvg.png?raw=true"/>
+<img src="images\COVID\COVID6-SevenAvg.png?raw=true"/>
 
 Track accumulated COVID cases number in Europe
 <img src="images\COVID\COVID7-EuropeCasesChoropleth.gif?raw=true"/>
