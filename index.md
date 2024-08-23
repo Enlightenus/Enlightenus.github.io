@@ -6,11 +6,14 @@
 
 [Project 1 - Human Resource Data Analysis](https://github.com/Enlightenus/Human_Resources_Data_Analysis)
 
-**Pay Gap Investigation**
+### Pay Gap Investigation
 
 Nowadays, employers need to ensure that employees are treated fairly and equitably.
-For example, California Equal Pay Act against unequal pay based on sex, race, or ethnicity.
+For example, **California Equal Pay Act** against unequal pay based on sex, race, or ethnicity.
 Also, employers with at least 100 employees needs to annually report pay, demographic, and other workforce data to the Civil Rights Department.
+
+**Do employees with different genders receive equal salary?**
+Visualize the Department-wise Salary(Mean) by Gender
 <img src="images\HR\HR1-DeptByGender.png?raw=true"/>
 
 Perform ANOVA to examine the variance within and between groups
@@ -18,18 +21,27 @@ Perform ANOVA to examine the variance within and between groups
 
 <img src="images\HR\HR3-PostHoc.png?raw=true"/>
 
+Visualize the significance in heatmap to show the group-wise difference
 <img src="images\HR\HR4-Significance.png?raw=true"/>
 
-**Recruitment Analysis**
+### Recruitment Analysis
+**What's major recruitment sources?**
 <img src="images\HR\HR5-Recruitment.png?raw=true"/>
 
+**Do we have recruitment preference between department?**
+Visualize the recruitment sources by department.
 <img src="images\HR\HR6-DeptRecruitment.png?raw=true"/>
 
 <img src="images\HR\HR7-RecruitmentAction.png?raw=true"/>
 
+### Performance Analysis
+How's the employees' performance in each department?
 <img src="images\HR\HR8-Performance.png?raw=true"/>
 
+Visualize the performance with percentage annotation
 <img src="images\HR\HR9-PerformancePercent.png?raw=true"/>
+As observed, most employees (>70%) rated as fully meets or higher in performance.
+Interestingly, we observed 100% in Admin office, so we will check the original data and confirm with Admin Office if needed.
 
 
 ---
@@ -51,7 +63,7 @@ Start with known risk factors: Cholesterol and Age.
 
 <img src="images\Heart_Disease\Heart5-Alpha.png?raw=true"/>
 
-Build Decision Tree Model
+### Build Decision Tree Model
 <img src="images\Heart_Disease\Heart6-DT.png?raw=true"/>
 
 Among all symptoms, the **Chest Pain Type** and **ST depression** are more important. Interestingly, the cholesterol is not as important in prediction as we thought.
@@ -68,13 +80,13 @@ Among all symptoms, the **Chest Pain Type** and **ST depression** are more impor
 
 [Project 2 - COVID Visualization](https://github.com/Enlightenus/COVID_Visualization)
 
-How severe is COVID in the US?
+**How severe is COVID in the US?**
 
 Visualize the COVID cases and deaths in the US
 <img src="images\COVID\COVID1-UScases.png?raw=true"/>
 <img src="images\COVID\COVID2-USdeaths.png?raw=true"/>
 
-How severe is COVID by continents?
+**How severe is COVID by continents?**
 
 Visualize the COVID cases by continents
 <img src="images\COVID\COVID3-Cases.png?raw=true"/>
@@ -83,7 +95,7 @@ Visualize the COVID cases by continents
 List Top 10 Countries with most COVID cases in the Europe
 <img src="images\COVID\COVID5-EuropeTop10.png?raw=true"/>
 
-The 7-day moving average of daily reported cases is an important indicator to track the COVID spread out.
+The **7-day moving average** of daily reported cases is an important indicator to track the COVID spread out.
 List one country in each continent and track the cases with 7-day average.
 <img src="images\COVID\COVID6-SevenAvg.png?raw=true"/>
 
@@ -109,4 +121,6 @@ Among these three area, Rhode Island is expected since it's a popular spot for t
 
 ---
 <p style="font-size:11px">Page template forked from <a href="https://github.com/evanca/quick-portfolio">evanca</a></p>
+<p style="font-size:11px">Icon from <a href="https://Vecteezy.com">Vecteezy</a></p>
+
 <!-- Remove above link if you don't want to attibute -->
