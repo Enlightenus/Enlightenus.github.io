@@ -18,6 +18,7 @@ Perform ANOVA to examine the variance within and between groups
 
 <img src="images\HR\HR3-PostHoc.png?raw=true"/>
 
+Visualize the significance in heatmap to show the group-wise difference
 <img src="images\HR\HR4-Significance.png?raw=true"/>
 
 **Recruitment Analysis**
