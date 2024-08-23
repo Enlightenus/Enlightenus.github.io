@@ -111,19 +111,20 @@ Track accumulated COVID cases number in Europe
 Track accumulated COVID cases number in the US
 <img src="images\COVID\COVID8-USCasesMap.png?raw=true"/>
 Among states, California has most COVID cases(9.35M), followed by Texas(6.79M), Florida(5.99M) and New York(5.26M).
-California, Texas, Florida and New York are states known for large population.
-Therefore, we can further examine the relationship between population and COVID cases.
+**California, Texas, Florida and New York are states known for large population.**
+Therefore, we can further **examine the relationship between population and COVID cases**.
 
 To investigate the correlation between population and the COVID cases in the US.
 We can use bubble chart to present population data vs cases per capita data
 
-State population data collected from U.S. Census Bureau, Release Date: December 2023
-https://www.census.gov/data/tables/time-series/demo/popest/2020s-state-total.html
+State population data collected from <a href="https://www.census.gov/data/tables/time-series/demo/popest/2020s-state-total.html">U.S. Census Bureau</a>, Release Date: December 2023
+
+
 Here, due to lack a full year data in 2023, using 2022 data for calculation.
 <img src="images\COVID\COVID9-USBubbleChart.png?raw=true"/>
 
-In this bubble chart, we can observe that higher population does correlate with higher COVID cases; however, we can also noticed that some places with highest cases per capita is actually in the area with lower resident population.
-Among these three area, Rhode Island is expected since it's a popular spot for tourism. However, Alaska and North Dakota is not explainable by the visitors. Therefore, these two places will be a good target for further investigation in public health policy.
+In this bubble chart, we can observe that **higher population does correlate with higher COVID cases**; however, we can also noticed that some places with highest cases per capita is actually in the area with lower resident population.
+Among these three area, **Rhode Island is expected since it's a popular spot for tourism**. However, Alaska and North Dakota is not explainable by the visitors. Therefore, these two places will be a good target for further investigation in public health policy.
 
 ---
 <p style="font-size:11px">Page template forked from <a href="https://github.com/evanca/quick-portfolio">evanca</a></p>
