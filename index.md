@@ -13,6 +13,7 @@ For example, **California Equal Pay Act** against unequal pay based on sex, race
 Also, employers with at least 100 employees needs to annually report pay, demographic, and other workforce data to the Civil Rights Department.
 
 **Do employees with different genders receive equal salary?**
+
 Visualize the Department-wise Salary(Mean) by Gender
 <img src="images\HR\HR1-DeptByGender.png?raw=true"/>
 
@@ -25,16 +26,20 @@ Visualize the significance in heatmap to show the group-wise difference
 <img src="images\HR\HR4-Significance.png?raw=true"/>
 
 ### Recruitment Analysis
+
 **What's major recruitment sources?**
+
 <img src="images\HR\HR5-Recruitment.png?raw=true"/>
 
 **Do we have recruitment preference between department?**
+
 Visualize the recruitment sources by department.
 <img src="images\HR\HR6-DeptRecruitment.png?raw=true"/>
 
 <img src="images\HR\HR7-RecruitmentAction.png?raw=true"/>
 
 ### Performance Analysis
+
 How's the employees' performance in each department?
 <img src="images\HR\HR8-Performance.png?raw=true"/>
 
@@ -64,6 +69,7 @@ Start with known risk factors: Cholesterol and Age.
 <img src="images\Heart_Disease\Heart5-Alpha.png?raw=true"/>
 
 ### Build Decision Tree Model
+
 <img src="images\Heart_Disease\Heart6-DT.png?raw=true"/>
 
 Among all symptoms, the **Chest Pain Type** and **ST depression** are more important. Interestingly, the cholesterol is not as important in prediction as we thought.
