@@ -35,7 +35,7 @@ jobs:
           npm install --legacy-peer-deps
           npm run build
         env:
-          VITE_GA_ID: ${{ secrets.VITE_GA_ID }} # 注入 Secret
+          VITE_GA_ID: ${{ secrets.VITE_GA_ID }}
 
       - name: Upload Artifact
         uses: actions/upload-pages-artifact@v3
