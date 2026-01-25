@@ -1,0 +1,231 @@
+:root {
+  /* Light Theme */
+  --bg-main: #f6f8fa;
+  --bg-card: #ffffff;
+  --text-title: #213547;
+  --text-h3: #4a4a4a;
+  --text-body: #333333;
+  --text-muted: #586069;
+  --border-color: #e1e4e8;
+  --tag-bg: #e7f5ff;
+  --tag-text: #1c7ed6;
+  --footer-color: #888;
+  --shadow: rgba(0, 0, 0, 0.1);
+}
+
+/* Dark Theme*/
+[data-theme='dark'] {
+  --bg-main: #0d1117;
+  --bg-card: #161b22;
+  --text-title: #f0f6fc;
+  --text-h3: #c9d1d9;
+  --text-body: #b1bac4;
+  --text-muted: #8b949e;
+  --border-color: #30363d;
+  --tag-bg: #1f2937;
+  --tag-text: #58a6ff;
+  --footer-color: #6e7681;
+  --shadow: rgba(0, 0, 0, 0.5);
+}
+
+body {
+  background-color: var(--bg-main);
+  margin: 0;
+  transition: background-color 0.3s ease;
+}
+
+#root {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: left;
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  color: var(--text-body);
+}
+
+h1 {
+  font-size: 2.5rem;
+  line-height: 1.1;
+  margin-bottom: 0;
+  color: var(--text-title);
+}
+
+/* 2. Grid */
+.project-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 24px;
+  padding: 2rem 0;
+}
+
+/* 3. Card */
+.project-card {
+  background: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 12px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  transition: all 0.3s ease;
+}
+
+.project-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 12px 24px var(--shadow);
+}
+
+.card-image {
+  width: 100%;
+  height: 300px;
+  overflow: hidden;
+  background-color: var(--border-color);
+}
+
+.card-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.card-content {
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+.card-content h3 {
+  margin-top: 0;
+  margin-bottom: 0.5rem;
+  min-height: 3rem;
+  display: flex;
+  align-items: flex-start;
+  color: var(--text-h3);
+}
+
+.card-content p {
+  margin: 0 0 1.5rem 0;
+  font-size: 0.95rem;
+  line-height: 1.5;
+  flex-grow: 1;
+  color: var(--text-muted);
+}
+
+/* 4. tags */
+.tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-bottom: 15px;
+  min-height: 25px;
+}
+
+.tag {
+  background: var(--tag-bg);
+  color: var(--tag-text);
+  padding: 4px 10px;
+  border-radius: 4px;
+  font-weight: 600;
+  font-size: 11px;
+}
+
+.site-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid var(--border-color);
+  padding: 1rem 0;
+  margin-bottom: 2rem;
+}
+
+.site-footer {
+  margin-top: 40px;
+  border-top: 1px solid var(--border-color);
+  padding-top: 20px;
+  font-size: 0.8rem;
+  color: var(--footer-color);
+}
+
+/* located to header */
+.site-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid var(--border-color);
+  padding-bottom: 10px;
+  margin-bottom: 20px;
+}
+
+
+.theme-switch {
+  display: inline-block;
+  height: 26px;
+  position: relative;
+  width: 50px;
+  flex-shrink: 0;
+}
+
+.theme-switch input {
+  display: none;
+}
+
+.theme-switch-wrapper {
+  display: flex;
+  align-items: center;
+}
+
+/* slider button */
+.slider {
+  background-color: #e4e6eb;
+  bottom: 0;
+  cursor: pointer;
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+  transition: .4s;
+  border-radius: 34px;
+}
+
+/* slider icon */
+.slider .icon {
+  position: absolute;
+  left: 5px;
+  bottom: 3px;
+  font-size: 14px;
+  transition: .4s;
+  z-index: 2;
+}
+
+.slider:before {
+  background-color: #fff;
+  bottom: 3px;
+  content: "";
+  height: 20px;
+  left: 3px;
+  position: absolute;
+  transition: .4s;
+  width: 20px;
+  border-radius: 50%;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+input:checked+.slider {
+  background-color: #2c3e50;
+}
+
+input:checked+.slider:before {
+  transform: translateX(24px);
+}
+
+input:checked+.slider .icon {
+  transform: translateX(24px);
+}
+
+/* limit the selected image to 300px */
+.markdown-content img[alt*="Not Available"] {
+  height: 350px;
+  width: 350px;
+}
