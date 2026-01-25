@@ -4,6 +4,7 @@ on:
   push:
     branches: [ "main" ]
   workflow_dispatch:
+
 permissions:
   contents: read
   pages: write
@@ -31,10 +32,10 @@ jobs:
 
       - name: Install and Build
         run: |
-          npm install
+          npm install --legacy-peer-deps
           npm run build
         env:
-          VITE_GA_ID: ${{ secrets.VITE_GA_ID }}
+          VITE_GA_ID: ${{ secrets.VITE_GA_ID }} # 注入 Secret
 
       - name: Upload Artifact
         uses: actions/upload-pages-artifact@v3
