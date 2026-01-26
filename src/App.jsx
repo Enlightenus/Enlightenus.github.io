@@ -32,7 +32,7 @@ function App() {
     <Router>
       <div className="portfolio">
         <header sclassName="site-header">
-          <h1>Enlightenus</h1>
+          <h1>Cheng Yun Lee</h1>
           <div className="theme-switch-wrapper">
             <label className="theme-switch" htmlFor="checkbox">
               <input
