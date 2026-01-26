@@ -86,8 +86,13 @@ function App() {
           {/* Project */}
           <Route path="/project/:id" element={<ProjectDetail />} />
         </Routes>
-        <footer className="mt-12 pt-6 border-t border-border-custom text-sm text-footer-color">
-          <p>© 2026 Cheng Yun Lee Portfolio</p>
+        <footer className="py-8 text-center text-sm text-gray-500">
+          <div className="container mx-auto px-4">
+            <p>© {new Date().getFullYear()} Cheng Yun Lee</p>
+            <p className="mt-2 text-xs opacity-75">
+              Icons by <a href="https://icons8.com" target="_blank" rel="noreferrer" className="hover:text-teal-600 transition-colors">Icons8</a> & <a href="https://flaticon.com" target="_blank" rel="noreferrer" className="hover:text-teal-600 transition-colors">Flaticon</a>
+            </p>
+          </div>
         </footer>
       </div>
     </Router>

@@ -1,16 +1,18 @@
-# React + Vite
+# My Personal Portfolio
+[Visit!](https://enlightenus.github.io/)|[![⚡ Build Status](https://github.com/Enlightenus/Enlightenus.github.io/actions/workflows/deploy.yml/badge.svg)](https://github.com/Enlightenus/Enlightenus.io/actions)
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A minimalist personal website built to showcase my projects and professional journey.
+Built with **React 18**, **Tailwind CSS v4**, and **Vite**.
 
-Currently, two official plugins are available:
+## 🛠️  (TODO List)
+- **Projects**
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
-
-## React Compiler
-
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
-
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- **Visual improvement**
+    - [x] Add dark mode
+    - [] Adding Animations for better display
+    - [x] Favicon
+- **Deployment**
+    - [x] setup GitHub Actions
+---
+© 2026 Cheng Yun Lee.
+Icons by [Icons8](https://icons8.com) & [Flaticon](https://flaticon.com)
