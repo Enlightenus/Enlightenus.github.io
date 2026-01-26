@@ -51,26 +51,46 @@ function App() {
           </nav>
 
         </header>
-
         <Routes>
           {/* Cards */}
           <Route path="/" element={
-            <main className="project-grid">
+            <main className="grid grid-cols-[repeat(auto-fit,minmax(280px,1fr))] gap-6 py-8">
               {projects.map((item) => (
-                <div key={item.id} className="project-card">
-                  <div className="card-image">
-                    <img src={item.image} alt={item.title} />
+                <div key={item.id} className="bg-card border border-border-custom rounded-xl overflow-hidden flex flex-col h-full transition-all duration-300 hover:-translate-y-2 hover:shadow-custom group">
+
+                  {/* Card Image */}
+                  <div className="w-full h-[300px] overflow-hidden bg-border-custom">
+                    <img
+                      src={item.image}
+                      alt={item.title}
+                      className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105"
+                    />
                   </div>
-                  <div className="card-content">
-                    <h3>{item.title}</h3>
-                    <div className="tags">
+
+                  {/* Card Content */}
+                  <div className="p-6 flex flex-col flex-1">
+                    <h3 className="m-0 mb-2 min-h-[3rem] flex items-start text-h3 font-bold text-xl">
+                      {item.title}
+                    </h3>
+
+                    {/* Tags */}
+                    <div className="flex flex-wrap gap-2 mb-4 min-h-[25px]">
                       {item.tags.map(tag => (
-                        <span key={tag} className="tag">{tag}</span>
+                        <span key={tag} className="bg-tag-bg text-tag-text px-2.5 py-1 rounded font-semibold text-[11px]">
+                          {tag}
+                        </span>
                       ))}
                     </div>
-                    <p>{item.description}</p>
-                    {/* Links to the project page*/}
-                    <Link to={`/project/${item.id}`} className="view-link">
+
+                    <p className="m-0 mb-6 text-[0.95rem] leading-6 grow text-muted">
+                      {item.description}
+                    </p>
+
+                    {/* Links */}
+                    <Link
+                      to={`/project/${item.id}`}
+                      className="text-tag-text font-medium hover:underline inline-flex items-center gap-1 mt-auto"
+                    >
                       Read Full Project →
                     </Link>
                   </div>
