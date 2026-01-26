@@ -9,7 +9,7 @@ Built with **React 18**, **Tailwind CSS v4**, and **Vite**.
 
 - **Visual improvement**
     - [x] Add dark mode
-    - [] Adding Animations for better display
+    - [ ] Adding Animations for better display
     - [x] Favicon
 - **Deployment**
     - [x] setup GitHub Actions
