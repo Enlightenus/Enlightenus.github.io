@@ -9,10 +9,10 @@ Built with **React 18**, **Tailwind CSS v4**, and **Vite**.
 
 - **Visual improvement**
     - [x] Add dark mode
-    - [ ] Adding Animations for better display
+    - [ ] Add animations for better display
     - [x] Favicon
 - **Deployment**
-    - [x] setup GitHub Actions
+    - [x] Setup GitHub Actions
 ---
-© 2026 Cheng Yun Lee.
+© 2026 Enlightenus.
 Icons by [Icons8](https://icons8.com) & [Flaticon](https://flaticon.com)
