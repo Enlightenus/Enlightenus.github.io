@@ -1,68 +1,151 @@
+@import "tailwindcss";
+
+@theme {
+  --color-main: var(--bg-main);
+  --color-card: var(--bg-card);
+  --color-title: var(--text-title);
+  --color-h3: var(--text-h3);
+  --color-body: var(--text-body);
+  --color-muted: var(--text-muted);
+  --color-border-custom: var(--border-color);
+  --color-footer-color: var(--footer-color);
+  --color-tag-bg: var(--tag-bg);
+  --color-tag-text: var(--tag-text);
+  --shadow-custom: var(--shadow);
+}
+
+/* 這裡是你的變數資料庫 */
 :root {
-  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
-  line-height: 1.5;
-  font-weight: 400;
-
-  color-scheme: light dark;
-  color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
-
-  font-synthesis: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  /* Light Theme */
+  --bg-main: #f6f8fa;
+  --bg-card: #ffffff;
+  --text-title: #213547;
+  --text-h3: #4a4a4a;
+  --text-body: #333333;
+  --text-muted: #586069;
+  --border-color: #e1e4e8;
+  --tag-bg: #e7f5ff;
+  --tag-text: #1c7ed6;
+  --footer-color: #888;
+  --shadow: rgba(0, 0, 0, 0.1);
 }
 
-a {
-  font-weight: 500;
-  color: #646cff;
-  text-decoration: inherit;
-}
-a:hover {
-  color: #535bf2;
-}
-
-body {
-  margin: 0;
-  display: flex;
-  place-items: center;
-  min-width: 320px;
-  min-height: 100vh;
+[data-theme='dark'] {
+  --bg-main: #0d1117;
+  --bg-card: #161b22;
+  --text-title: #f0f6fc;
+  --text-h3: #c9d1d9;
+  --text-body: #b1bac4;
+  --text-muted: #8b949e;
+  --border-color: #30363d;
+  --tag-bg: #1f2937;
+  --tag-text: #58a6ff;
+  --footer-color: #6e7681;
+  --shadow: rgba(0, 0, 0, 0.5);
 }
 
-h1 {
-  font-size: 3.2em;
-  line-height: 1.1;
-}
-
-button {
-  border-radius: 8px;
-  border: 1px solid transparent;
-  padding: 0.6em 1.2em;
-  font-size: 1em;
-  font-weight: 500;
-  font-family: inherit;
-  background-color: #1a1a1a;
-  cursor: pointer;
-  transition: border-color 0.25s;
-}
-button:hover {
-  border-color: #646cff;
-}
-button:focus,
-button:focus-visible {
-  outline: 4px auto -webkit-focus-ring-color;
-}
-
-@media (prefers-color-scheme: light) {
-  :root {
-    color: #213547;
-    background-color: #ffffff;
+@layer base {
+  body {
+    background-color: var(--bg-main);
+    color: var(--text-body);
+    margin: 0;
+    transition: background-color 0.3s ease;
   }
-  a:hover {
-    color: #747bff;
+
+  #root {
+    @apply max-w-[800px] mx-auto p-8 text-left;
+    font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+
+    h1 {
+      @apply text-xl font-bold tracking-tight text-title m-0;
+      line-height: 1.2;
+    }
   }
-  button {
-    background-color: #f9f9f9;
+
+  img {
+    /* Ensure image does not overflow its container */
+    max-width: 100%;
+    height: auto;
+    object-fit: cover;
+  }
+
+  .theme-switch {
+    display: inline-block;
+    height: 26px;
+    position: relative;
+    width: 50px;
+    flex-shrink: 0;
+  }
+
+  .theme-switch input {
+    display: none;
+  }
+
+  .theme-switch-wrapper {
+    display: flex;
+    align-items: center;
+  }
+
+  /* slider button */
+  .slider {
+    background-color: #e4e6eb;
+    bottom: 0;
+    cursor: pointer;
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+    transition: .4s;
+    border-radius: 34px;
+  }
+
+  /* slider icon */
+  .slider .icon {
+    position: absolute;
+    left: 5px;
+    bottom: 3px;
+    font-size: 14px;
+    transition: .4s;
+    z-index: 2;
+  }
+
+  .slider:before {
+    background-color: #fff;
+    bottom: 3px;
+    content: "";
+    height: 20px;
+    left: 3px;
+    position: absolute;
+    transition: .4s;
+    width: 20px;
+    border-radius: 50%;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+  }
+
+  input:checked+.slider {
+    background-color: #2c3e50;
+  }
+
+  input:checked+.slider:before {
+    transform: translateX(24px);
+  }
+
+  input:checked+.slider .icon {
+    transform: translateX(24px);
+  }
+
+  /* Ensure image does not overflow its container */
+  img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+  }
+
+  /* Optimize for images in the container */
+  .markdown-content img {
+    border-radius: 8px;
+    margin: 1.5rem auto;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
   }
 }
