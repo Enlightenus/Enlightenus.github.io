@@ -1,5 +1,5 @@
-# My Personal Portfolio
-[Visit!](https://enlightenus.github.io/)|[![⚡ Build Status](https://github.com/Enlightenus/Enlightenus.github.io/actions/workflows/deploy.yml/badge.svg)](https://github.com/Enlightenus/Enlightenus.io/actions)
+# [My Personal Portfolio](https://enlightenus.github.io/)
+[![⚡ Build Status](https://github.com/Enlightenus/Enlightenus.github.io/actions/workflows/deploy.yml/badge.svg)](https://github.com/Enlightenus/Enlightenus.github.io/actions)
 
 A minimalist personal website built to showcase my projects and professional journey.
 Built with **React 18**, **Tailwind CSS v4**, and **Vite**.
