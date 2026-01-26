@@ -38,7 +38,7 @@ Among all symptoms, the **Chest Pain Type** and **ST depression** are more impor
 ![Classification Report.png](/Heart8-ClassificationReport.png)
 
 
-![Evaluation](Heart9-ConfusionMatrix.png)
+![Evaluation](/Heart9-ConfusionMatrix.png)
 `
     },
     {

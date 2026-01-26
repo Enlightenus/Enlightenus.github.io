@@ -2,24 +2,8 @@ import React, { useState, useEffect } from 'react';
 import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
 import { projects } from './data';
 import ProjectDetail from './ProjectDetail';
-import ReactMarkdown from 'react-markdown'
-import './App.css'
 
-const myContent = `
-Welcome to my Portfolio
 
-### Tech
-- Vite + React
-- JavaScript
-
----
-
----
-<p style="font-size:11px">Page template forked from <a href="https://github.com/evanca/quick-portfolio">evanca</a></p>
-<p style="font-size:11px">Icon from <a href="https://Vecteezy.com">Vecteezy</a></p>
-
-`
-// src/App.jsx
 
 function App() {
   /* Dark Theme */
@@ -30,9 +14,9 @@ function App() {
   }, [isDark]);
   return (
     <Router>
-      <div className="portfolio">
-        <header sclassName="site-header">
-          <h1>Cheng Yun Lee</h1>
+      <div className="portfolio min-h-screen flex flex-col">
+        <header className="flex justify-between items-center border-b border-border-custom py-4 mb-8">
+          <h1 className="text-xl">Cheng Yun Lee</h1>
           <div className="theme-switch-wrapper">
             <label className="theme-switch" htmlFor="checkbox">
               <input
@@ -59,7 +43,7 @@ function App() {
                 <div key={item.id} className="bg-card border border-border-custom rounded-xl overflow-hidden flex flex-col h-full transition-all duration-300 hover:-translate-y-2 hover:shadow-custom group">
 
                   {/* Card Image */}
-                  <div className="w-full h-[300px] overflow-hidden bg-border-custom">
+                  <div className="w-full aspect-[16/9] md:h-[300px] overflow-hidden bg-border-custom">
                     <img
                       src={item.image}
                       alt={item.title}
@@ -102,8 +86,8 @@ function App() {
           {/* Project */}
           <Route path="/project/:id" element={<ProjectDetail />} />
         </Routes>
-        <footer className="site-footer">
-          <p>© 2026 Enlightenus Portfolio</p>
+        <footer className="mt-12 pt-6 border-t border-border-custom text-sm text-footer-color">
+          <p>© 2026 Cheng Yun Lee Portfolio</p>
         </footer>
       </div>
     </Router>
